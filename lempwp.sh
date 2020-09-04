@@ -150,6 +150,7 @@ sleep 1
 nginx -t
 
 systemctl restart nginx
+rm -r /tmp/latest.tar.gz
 
 echo -e "\033[36m"
 echo "-----Installation Done-----"
