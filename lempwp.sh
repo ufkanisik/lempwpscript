@@ -16,6 +16,7 @@ echo -e "\033[0m"
 echo "Installation initializing..."
 
 sleep 5
+apt purge apache2
 apt update && apt full-upgrade -y
 
 apt install nginx -y
