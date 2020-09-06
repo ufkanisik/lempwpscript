@@ -16,7 +16,7 @@ echo -e "\033[0m"
 echo "Installation initializing..."
 
 sleep 5
-apt purge apache2
+apt purge apache2 -y
 apt update && apt full-upgrade -y
 
 apt install nginx -y
@@ -242,7 +242,7 @@ nginx -t
 
 systemctl restart nginx
 rm -r /tmp/latest.tar.gz
-apt purge apache2
+apt purge apache2 -y
 echo -e "\033[36m"
 echo "-----Installation Done-----"
 echo "-----Dont forget to add the IP and URL to your host-----"
